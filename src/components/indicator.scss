@@ -1,0 +1,38 @@
+// .anim{
+//     /* animation: anim 500ms linear  inifinite both; */
+//     animation: anim 500ms linear  inifinite;
+//     /* transform: translateX(-100%);*/
+//     width: 0;
+// }
+
+// @keyframes anim {
+//     /* 0%{transform: translateX(0);}
+//     100%{transform: translateX(100%);} */
+//     0%{width: 0;}
+//     100%{width: 100px;}
+// }
+
+.anim{
+    position: relative;
+    animation: anim 2s linear infinite;
+  }
+
+  @keyframes anim {
+    0% {
+      left: 0%;
+      width: 0%;
+    }
+    80% {
+      left: 50%;
+      width: 40%;
+    }
+    100% {
+      left: 100%;
+      width: 0%;
+    }
+
+  }
+  @keyframes changeWidth {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
